@@ -3,8 +3,9 @@
 /*==variables==*/
 :root{
   /*==colors==*/
-  --first-color: #ff6100;
+  --first-color: #f6532a;
   --second-color: #7822ff;
+  --third-color: #53355f;
   --body-color: #fff;
   --container-color: #fff;
 
@@ -36,7 +37,6 @@ html{
   font-family: 'Poppins', sans-serif;
 }
 body{
-  
   font-family: var(--body-font);
   background-color: var(--body-color);
 }
@@ -50,6 +50,14 @@ img{
   background-color: var(--body-color)
 
 }
+.container-2{
+  width:25%;
+  max-width: 470;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, .45);
+  border: 2px solid #3a1b22;
+  border-radius: 16px;
+}
 
 /*==NAV==*/
 nav{
@@ -62,27 +70,15 @@ nav{
 
 }
 
-.nav-logo{
-  display: flex;
-  font-size: 40px;
-  font-weight: 800;
-  color: #3d535f;
-  letter-spacing: 3px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
 
-.logo-image{
-  width:46px;
-  height: 46px;
-  border-radius: 50%;
- 
-  margin-top: -6px;
-}
-
-b{
-  font-size: 70px;
-  color:var(--first-color);
+.logo{
+  position: absolute;
+  height: aut0;
+  left:0px;
+  width:250px;
+  justify-content: space-between;
+  
+  
 }
 
 .navItems{
@@ -97,7 +93,7 @@ b{
 
 .navItems li a{
   font-size: 25px;
-  color: #3d535f;
+  color: var(--third-color);
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: capitalize;
@@ -119,6 +115,12 @@ b{
       box-shadow: 0 -1px 4px rgba(0,0,0,.15);
       transition: .3s;
   }
+  .team{
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+  
 }
 
 .wrapper{
@@ -139,7 +141,7 @@ b{
   display: block;
   position: relative;
   letter-spacing: 5px;
-  color:#3d535f;
+  color:var(--third-color)
 }
 
 .topline::after{
@@ -155,9 +157,61 @@ h1{
   display: block;
   font-size: 7em;
   font-weight: 900;
-  color: #3d535f;
+  color: var(--third-color);
   margin-bottom: -0.3em;
 }
+
+.container.h1{
+  text-align:center;
+  color:var(--first-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding:0  0 0 8px 0;
+}
+
+.container form{
+  padding: 0 50px;
+}
+
+h2{
+  display:block;
+  font-size: 3em;
+  content:'';
+  font-weight: 600;
+  color: var(--third-color);
+  color: #fff;
+  text-align: center;
+  
+}
+
+h3{
+  display: block;
+  font-size: 3.5em;
+  font-weight: 900;
+  color: var(--third-color);
+  margin-bottom: -0.3em;
+  text-align: center;
+}
+
+h4{
+  display: block;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: var(--third-color);
+  margin-bottom: -0.3em;
+  text-align: center;
+}
+h6{
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--first-color);
+  margin-bottom: -0.3em;
+  letter-spacing: 0.4em;
+  text-align: center;
+
+}
+
 
 .multiText{
   color: var(--first-color);
@@ -169,7 +223,16 @@ p{
   display: block;
   width: 90%;
   font-size: 2em;
-  color: #3d535f;
+  color: var(--third-color);
+}
+
+p2{
+  display: block;
+  width: 90%;
+  font-size: 1.5em;
+  color: var(--third-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 button{
@@ -179,7 +242,7 @@ button{
   font-size: 25px;
   font-weight: 400;
   color: #fff;
-  background-color: #3d535f;
+  background-color:var(--third-color);
   padding: 8px 14px;
   margin: 40px 5px;
   letter-spacing: 2px;
@@ -239,5 +302,105 @@ button:hover{
   width: 100%;
 }
 
+.div-1{
+  background-color: var(--third-color);
+  height:300px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  display: flex;
 
+  
 
+}
+
+input[type=text]{
+  width: 80%;
+  padding: 12px 20px;
+  margin:8px 0;
+  box-sizing: border-box;
+  margin-left: 2%;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  transition: width 0.4s ease-in-out;
+  font-size: large;
+}
+
+form.main{
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid, var(--second-color);
+}
+
+.main input{
+
+}
+
+.team{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(#b6b5b9, #d7d4dc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.team-content{
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items:center;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.team-content img{
+  width:100%;
+  height:auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.box{
+  padding: 16px;
+  background: #1b1229;
+  border-radius: 15px;
+  transition: all .38s ease;
+}
+
+.box h4{
+  font-size: 23px;
+  font-weight: 600;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.box h5{
+  font-size:15px;
+  font-weight: 600;
+  color: #b7b4bb;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.icons i{
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: all .38s ease;
+}
+
+.icons i:hover{
+  transform: scale(1.2);
+}
+
+.box:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
