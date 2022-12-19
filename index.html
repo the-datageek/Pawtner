@@ -13,12 +13,13 @@
 <body>
     <div class="container">
       <nav>
-        <img src="/src/logo.png" class="logo">
+        <a href="#section1"><img src="/src/logo.png" class="logo"></a>
           <ul class="navItems">
             <li><a href="#section1">Home</a></li>
             <li><a href="#section2">Adopt a Pet</a></li>
             <li><a href="#section3">About Us</a></li>
             <li><a href="#section4">Login</a></li>
+            <li><a href="#"><i class="uil uil-user"></i></a></li>
           </ul>
           </nav>
           <div id="section1">
@@ -67,7 +68,7 @@
                     <a href="#"><i class="uil uil-linkedin"></i></a>
                   </div>
                 </div>
-                
+
                 <div class="box">
                   <img src="/src/nk.png">
                   <h4>Nyokabi Kamau</h4>
@@ -107,8 +108,68 @@
           <div id="section4">
             <div class="div-1">
                 <h2>Join our family of pet lovers!</h2>
-                <form>
-                  <input type="text" id="fname" name="fname">
+          </div>
+
+          <div class="login">
+            <div class="login_content">
+              <img src="" >
+              <div class="login__forms">
+                <form action="" class="login__register" id="login-in">
+                    <h4 class="login__title"> Sign In</h4>
+
+                    <div class='login__box'>
+                        <i class='bx bxs-user login__icon'></i>
+                    <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bxs-lock login__icon'></i>
+                    <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__forgot">Forgot Password</a>
+
+                    <a href="#" class="login__button">Sign In</a>
+
+                    <div>
+                        <span class="login__account">Dont have an account?</span>
+                        <span class="login__signin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="" class="login__create none" id="login-up">
+                    <h4 class="login__title"> Create Account</h4>
+
+                    <div class='login__box '>
+                        <i class='bx bxs-user login__icon'></i>
+                    <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bxs-lock login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__button">Sign In</a>
+
+                    <div>
+                        <span class="login__account">Already have an account?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
+                    </div>
+
+                </form>
+            </div>
           </div>
         </div>
     </div>
