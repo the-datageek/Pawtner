@@ -14,9 +14,9 @@
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px...*/
   --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
+  --h1-font-size: 1.2rem;
+  --h2-font-size: 1rem;
+  --h3-font-size: 0.9rem;
   --normal-font-size: .938rem;
   --small-font-size: 813rem;
   --smaller-font-size: .75rem;
@@ -107,7 +107,7 @@ nav{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
   .nav{
       position: fixed;
       bottom: -100%;
@@ -124,6 +124,52 @@ nav{
     padding: 90px 2%;
   }
   
+}
+@media screen and (min-width:576px){
+  .login__forms{
+      width: 348px;
+      justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .login{
+      height: 100vh;
+      overflow: hidden;
+  }
+  /*maybe not idk*/
+  .login__content{
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      align-items: center;
+      margin-left: 10rem;
+  }
+
+  .login__img{
+      display: flex;
+      width: 600px;
+      height: 588px;
+      background-color: var(--first-color-lighten);
+      border-radius: 1rem;
+      padding-left: 1rem;
+  }
+
+  .login__img img{
+      width: 390px;
+      margin-top: 0;
+  }
+
+  .login__register, login__create{
+      left: -11rem;
+  }
+
+  .login__register{
+      bottom: -2rem;
+  }
+
+  .login__create{
+      bottom: -5.5rem
+  }
 }
 
 .wrapper{
@@ -158,7 +204,7 @@ nav{
 /*==H-TAGS==*/
 h1{
   display: block;
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 900;
   color: var(--third-color);
   margin-bottom: -0.3em;
@@ -178,7 +224,7 @@ h1{
 
 h2{
   display:block;
-  font-size: 3em;
+  font-size: 2.8em;
   content:'';
   font-weight: 600;
   color: var(--third-color);
@@ -189,7 +235,7 @@ h2{
 
 h3{
   display: block;
-  font-size: 3.5em;
+  font-size: 3.3em;
   font-weight: 900;
   color: var(--third-color);
   margin-bottom: -0.3em;
@@ -198,21 +244,37 @@ h3{
 
 h4{
   display: block;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: 900;
   color: var(--third-color);
   margin-bottom: -0.3em;
   text-align: center;
 }
+h5{
+  display: block;
+  font-size: 1.1em;
+  font-weight: 900;
+  color: var(--third-color);
+  text-align: center;
+
+}
 h6{
   display: block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   color: var(--first-color);
   margin-bottom: -0.3em;
   letter-spacing: 0.4em;
   text-align: center;
 
+}
+h7{
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--first-color);
+    margin-bottom: -0.3em;
+    text-align: center;
 }
 
 
@@ -304,10 +366,15 @@ button:hover{
   }
 }
 
-#section1,#section2,#section3,#section4{
-  height: 1000px;
+#section1,#section2,#section3{
+  height: 900px;
   display: inline-block;
   width: 100%;
+}
+
+#section4, #section5{
+  height: 250px;
+  background-color: var(--third-color);
 }
 
 .div-1{
@@ -317,31 +384,6 @@ button:hover{
   justify-content: center;
   padding: 0 10%;
   display: flex;
-
-  
-
-}
-
-input[type=text]{
-  width: 80%;
-  padding: 12px 20px;
-  margin:8px 0;
-  box-sizing: border-box;
-  margin-left: 2%;
-  border-radius: 6px;
-  background-repeat: no-repeat;
-  transition: width 0.4s ease-in-out;
-  font-size: large;
-}
-
-
-form.main{
-  position: relative;
-  margin: 30px 0;
-  border-bottom: 2px solid, var(--second-color);
-}
-
-.main input{
 
 }
 
@@ -414,148 +456,41 @@ form.main{
   cursor: pointer;
 }
 
-/*==BASE==*/
-*,::before,::after{
-  box-sizing: border-box;
+.pets{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-gap: 50px;
+  margin: 50px auto;
+  max-width: 1240px;
+  padding: 20px;
 }
 
-/*==LOGIN FORM==*/
-.login{
-  display:grid;
-  grid-template-columns: 100%;
-  height: 100vh;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.pet{
+  padding: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.login__content{
-  justify-self: center;
-}
-
-.login__img{
-  justify-self: center;
-
-}
-
-.login__img img{
-  width: 310px;
-  margin-top: 1.5rem;
-
-}
-
-.login__forms{
-  position:relative;
-  height: 368px;
-}
-
-.login_register, .login__create{
-  position:absolute;
-  bottom: 1rem;
+.pet img{
   width: 100%;
-  background-color: #d2cada;
-  padding: 2rem 1rem;
-  border-radius: 1rem;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(35,0,077,.2);
-  animation-duration: .4s;
-  animation-name: animate-login;
-}
-
-@keyframes animate-login{
-  0%{
-      tranform: scale(1,1);
-  }
-  50%{
-      transform: scale(1.1,1.1);
-  }
-  50%{
-      transform: scale(1.1,1.1);
-  }
-
-}
-
-.login__title{
-  font-size: var(--h1-font-size);
-  margin-bottom: 2rem;
-}
-
-.login__box{
-  display:grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: .5rem;
-  padding: 1.125rem 1rem;
-  background-color: #fff;
-  margin-top: 1rem;
-  border-radius: .5rem;
-}
-
-
-.login__icon{
-  font-size: 1.5rem;
-  color: var(--first-color);
-}
-
-.login{
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  font-weight: 700;
-  color: var(--first-color-dark)
-}
-
-.login__input{
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  font-weight: 700;
-  color: var(--third-color);
-
-}
-
-.login__input::placeholder{
-  font-size: var(--normal-font-size);
-  font-family: var(--body-font);
-  color: var(--second-color);
-}
-
-.login__forgot{
   display: block;
-  width: max-content;
-  margin-left: auto;
-  margin-top: .5rem;
-  font-size: var(--small-font-size);
-  font-weight: 600;
-  color: var(--first-color-light);
 }
 
-.login__button{
-  display: block;
-  padding: 1rem;
-  margin: 2rem 0;
-  background-color: var(--first-color);
-  color: #fff;
-  font-weight: 600;
+.pet .name{
   text-align: center;
-  border-radius: .5rem;
-  transition: .3s;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.login__button:hover{
-  background-color: var(--second-color);
+.pet .description .gender{
+  padding: 0;
+  line-height: 15px;
+  font-size: 10px;
 }
 
-.login__social{
-  margin-top: 2rem;
-}
 
-.login__social-icon{
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin: 0 1.5rem;
-}
 
-*Show login*/
-.block{
-    display: block;
-}
+
+
 

@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Cookie",
+        "image": "https://tinyurl.com/hpz7pv4w",
+        "description": "Loves carrots and spinach",
+        "age":"Old",
+        "gender":"Female",
+        "size":"medium"
+  
+      },
+      {
+        "name": "Lukas",
+        "image": "https://tinyurl.com/3rj5sma4",
+        "description": "Lukas is a shy pup but is very friendly once he gets used to you",
+        "age":"Young",
+        "gender":"Male",
+        "size":"small"
+  
+    },
+    {
+        "name": "Biscuit",
+        "image": "https://tinyurl.com/3a55auj2",
+        "description": "Biscuit is a beautiful cat",
+        "age":"Old",
+        "gender":"Female",
+        "size":"medium"
+  
+      },
+
+    {
+        "name": "Snow",
+        "image": "https://tinyurl.com/7nxrefzw",
+        "description": "",
+        "age":"Young",
+        "gender":"Male",
+        "size":"small"
+  
+    },
+    {
+        "name": "Pinky",
+        "image": "https://tinyurl.com/ya75bnea",
+        "description": "Cute and Friendly",
+        "age":"Young",
+        "gender":"Female",
+        "size":"medium"
+  
+    },
+
+    {
+        "name": "Sofia",
+        "image": "https://tinyurl.com/ms8hvbx6",
+        "description": "Cute and Friendly",
+        "age":"Young",
+        "gender":"Female",
+        "size":"small"
+  
+    },
+    {
+        "name": "Becky",
+        "image": "https://tinyurl.com/2683n26a",
+        "description": "Becky with the good feathers </br> Talkative and funny",
+        "age":"Young",
+        "gender":"Female",
+        "size":"small"
+  
+    },
+
+    {
+        "name": "Rex",
+        "image": "https://tinyurl.com/yu3r9jvk",
+        "description": "Cute and Friendly",
+        "age":"Young",
+        "gender":"Male",
+        "size":"medium"
+  
+    },   
+    {
+        "name": "Yura",
+        "image": "https://tinyurl.com/2p82aj9n",
+        "description": "Cute",
+        "age":"Young",
+        "gender":"Female",
+        "size":"small"
+  
+    }  
+]
