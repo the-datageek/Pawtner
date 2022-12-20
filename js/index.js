@@ -1,33 +1,6 @@
-/*== LOGIN SHOW and HIDDEN 
-const signUp = document.getELementById('sign-up'),
-	signIn = document.getELementById('sign-in'),
-	loginIn = document.getELementById('login-in'),
-	loginUp = document.getELementById('login-up')
+//URL
 
-signUp.addEventListener('click', ()=>{
-	//remove classes first if they exist
-	loginIn.classList.remove('block')
-	loginUp.classList.remove('none')
-
-	//add classes
-	loginIn.classList.add('none')
-	loginUp.classList.add('block')
-
-})
-
-signIn.addEventListener('click', ()=>{
-	//remove classes first if they exist
-	loginIn.classList.remove('none')
-	loginUp.classList.remove('block')
-
-	//add classes
-	loginIn.classList.add('block')
-	loginUp.classList.add('none')
-
-
-	==*/
-//request to fetch data from the json file
-//create new xmlttp-request object which will hold all the properties of the object
+//fetch data
  let http = new XMLHttpRequest();
 
  //prepare request with open() method
@@ -41,5 +14,26 @@ signIn.addEventListener('click', ()=>{
 
  http.onload = function(){
 	//check for ready state and status properties
-	if(this)
+	if(this.readyState == 4 && this.status == 200){
+
+		let pets = JSON.parse(this.responseText);
+		let output ="";
+
+		for(let item of pets){
+			output += `
+			<div class = "pet">
+				<image src="${item.image}" alt="${item.image}">
+				<h4 class="name">${item.name}</h4>
+				<h5 class="description">${item.description}</h5>
+				<h7 class="gender">${item.gender}</h7>
+				<p class ="wishlist">
+				<i class="uil uil-heart"></i> 
+				</p>
+				<button3>Adopt</button2></button3>
+			</div>
+			`;
+		}
+		document.querySelector(".pets").innerHTML = output;
+	}
  }
+
