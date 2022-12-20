@@ -349,7 +349,7 @@ button3{
   text-transform: capitalize;
   box-shadow: 0 10px 10px rgba(56, 6, 47, 0.4);
   border-radius: 8px;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 button, button2, button3:hover{
@@ -502,7 +502,6 @@ button, button2, button3:hover{
 .pet{
   padding: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
- 
 }
 
 .pet img{
@@ -525,7 +524,6 @@ button, button2, button3:hover{
   cursor: pointer;
   width: 80px;
   text-align: center;
-  margin-left: 5rem;
   margin-top: 1rem;
 }
 
@@ -533,10 +531,101 @@ button, button2, button3:hover{
   color: var(--second-color);
 }
   
+/*==Login Form==*/
 
+.box2{
+  position: relative;
+  border-radius: 12px;
+  width: 330px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 18px;
+  background-color: #f6ebf9;
 
+}
 
+.close{
+  display: block;
+  position: absolute;
+  width: 40px;
+  height:40px;
+  top: 0;
+  right: 0;
+  color: var(--first-color);
+  font-size: 34px;
+}
 
+.close:hover{
+  background-color: var(--third-color);
+  border-radius: 0 12px 0 0;
+  color:#fcfcfc;
+  cursor: pointer;
+}
 
+.registration-box{
+  margin-top: 63px;
+}
 
+label{
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  color: rgb(169, 171, 170);
+  margin-top: -62px;
+  padding-left: 18px;
+  text-align: left;
+  pointer-events: none;
+  transition: .4s;
+}
+input{
+  width:95%;
+  height: 42px;
+  margin: 10px 1px 28px 1px;
+  padding: 9px;
+  font-size: 18px;
+  color: var(--first-color);
+  border: var(--third-color) 1px solid;
+  outline: none;
+  border-radius: 5px;
+}
 
+input:focus~label,
+input:valid~label{
+    margin-top: -95px;
+    padding-left: 8px;
+    color: var(--first-color);
+    font-weight: 500;
+}
+
+.box span{
+  height: 2px;
+  background-color: var(--first-color);
+
+}*/
+.body-text{
+  font-size: 17px;
+  line-height: 25px;
+
+}
+
+p{
+    margin-top: 28px;
+    font-size: 22px;
+}
+
+button3{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 43px 10px 43px;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px; 
+    color: #fff;
+}
+
+button3:hover, button:focus{
+    background-color: var(--first-color);
+    outline: #fff;
+    cursor: pointer;
+}
