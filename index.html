@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,11 @@
         <a href="#section1"><img src="/src/logo.png" class="logo"></a>
           <ul class="navItems">
             <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">Adopt a Pet</a></li>
+            <li><a href="#section2">Adopt</a></li>
             <li><a href="#section3">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
             <li><a href="#section4">Login</a></li>
-            <li><a href="#section5"><i class="uil uil-user"></i></a></li>
+            <li class="btnOpen"><a href="#section5"><i class="uil uil-user"></i></a></li>
           </ul>
           </nav>
           <div id="section1">
@@ -33,7 +34,7 @@
                         <h1><span class="multiText">Dont Shop.</h1>
                         <p>It's never too late to fall in love</p>
                         <div class="btns">
-                            <button >Find Pet ></button>
+                            <button> <a href="#section2"> </a>Find Pet ></button>
                         </div>
                     </div>
                     <div class="cols cols1">
@@ -48,7 +49,11 @@
             <h6>OUR PETS</h6>
             <h4>Waiting for adoption</h4>
             <!--Fetch animal images from API-->
-            <img src="/src/dogo.png">
+            <div class="pets">
+            </div>
+            <div class="btns">
+              <button2>See More></button2>
+          </div>
           </div>
           <div id="section3">
             <!--add team members here-->
@@ -113,70 +118,34 @@
                 <h2>Join our family of pet lovers!</h2>
           </div>
           </div>
-          <!--<div id="section5">
-            <div class="login">
-              <div class="login_content">
-              <img src="" >
-              <div class="login__forms">
-                <form action="" class="login__register" id="login-in">
-                    <h4 class="login__title"> Sign In</h4>
-
-                    <div class='login__box'>
-                        <i class='bx bxs-user login__icon'></i>
-                    <input type="text" placeholder="Username" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bxs-lock login__icon'></i>
-                    <input type="password" placeholder="Password" class="login__input">
-                    </div>
-
-                    <a href="#" class="login__forgot">Forgot Password</a>
-
-                    <a href="#" class="login__button">Sign In</a>
-
-                    <div>
-                        <span class="login__account">Dont have an account?</span>
-                        <span class="login__signin" id="sign-up">Sign Up</span>
-                    </div>
-                </form>
-
-                <form action="" class="login__create none" id="login-up">
-                    <h4 class="login__title"> Create Account</h4>
-
-                    <div class='login__box '>
-                        <i class='bx bxs-user login__icon'></i>
-                    <input type="text" placeholder="Username" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bx-at login__icon'></i>
-                        <input type="text" placeholder="Email" class="login__input">
-                    </div>
-
-                    <div class="login__box">
-                        <i class='bx bxs-lock login__icon'></i>
-                        <input type="password" placeholder="Password" class="login__input">
-                    </div>
-
-                    <a href="#" class="login__button">Sign In</a>
-
-                    <div>
-                        <span class="login__account">Already have an account?</span>
-                        <span class="login__signup" id="sign-in">Sign In</span>
-                    </div>
-
-                    <div class="login__social">
-                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook-circle'></i></a>
-                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter'></i></a>
-                        <a href="#" class="login__social-icon"><i class='bx bxl-google'></i></a>
-                    </div>
-
-                </form>
+          
+          <button class="btnOpen">Register</button>
+            <section class="box">
+              <div class="close">&times;</div>
+              <div class="circle">
+                <span class="register-head"></span>
+                <span class="register-body"></span>
               </div>
+
+            <div class="registration-box">
+              <div>
+                <input type ="email" class="email" required="required">
+                <label for="email">Email</label>
+              </div>
+
+            <div>
+              <input type ="text" class="first_name" required="required">
+              <label for="first_name">First Name</label>
             </div>
-          </div> -->
-        </div>
+
+            <div>
+              <input type ="text" class="last_name" required="required">
+              <label for="last_name">Second Name</label>
+            </div>
+
+                <button class="btnSubmit">Submit</button>
+            </div>
+          </section>
         
     </div>
 
