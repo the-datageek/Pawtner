@@ -336,7 +336,23 @@ button2{
 
 }
 
-button, button2:hover{
+button3{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  background-color:var(--third-color);
+  padding: 8px 14px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 10px rgba(56, 6, 47, 0.4);
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+button, button2, button3:hover{
   background-color: var(--first-color);
 }
 /*==Image and Animation==*/
@@ -472,6 +488,7 @@ button, button2:hover{
   cursor: pointer;
 }
 
+/*==PETS==*/
 .pets{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -500,6 +517,22 @@ button, button2:hover{
   padding-bottom: 20px;
   font-weight: 600;
 }
+
+.pet .wishlist{
+  display: inline-block;
+  padding: 5px 0;
+  color: var(--first-color);
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.pet.wishlist:hover{
+  color: var(--second-color);
+}
+  
 
 
 
