@@ -411,7 +411,7 @@ button, button2, button3:hover{
 
 .div-1{
   background-color: var(--third-color);
-  height:300px;
+  height:250px;
   align-items: center;
   justify-content: center;
   padding: 0 10%;
@@ -541,6 +541,7 @@ button, button2, button3:hover{
   text-align: center;
   padding: 18px;
   background-color: #f6ebf9;
+  margin-top: 3em;
 
 }
 
@@ -582,7 +583,7 @@ input{
   height: 42px;
   margin: 10px 1px 28px 1px;
   padding: 9px;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--first-color);
   border: var(--third-color) 1px solid;
   outline: none;
@@ -613,7 +614,7 @@ p{
     font-size: 22px;
 }
 
-button3{
+button4{
     display: block;
     margin: 0 auto;
     margin-top: 25px;
