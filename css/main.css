@@ -6,6 +6,8 @@
   --first-color: #f6532a;
   --second-color: #7822ff;
   --third-color: #53355f;
+  --fourth-color: #f9bb8c;
+  --fifth-color: #bf9df6;
   --body-color: #fff;
   --container-color: #fff;
 
@@ -125,52 +127,6 @@ nav{
   }
   
 }
-@media screen and (min-width:576px){
-  .login__forms{
-      width: 348px;
-      justify-self: center;
-  }
-}
-
-@media screen and (min-width: 1024px){
-  .login{
-      height: 100vh;
-      overflow: hidden;
-  }
-  /*maybe not idk*/
-  .login__content{
-      grid-template-columns: repeat(2, max-content);
-      justify-content: center;
-      align-items: center;
-      margin-left: 10rem;
-  }
-
-  .login__img{
-      display: flex;
-      width: 600px;
-      height: 588px;
-      background-color: var(--first-color-lighten);
-      border-radius: 1rem;
-      padding-left: 1rem;
-  }
-
-  .login__img img{
-      width: 390px;
-      margin-top: 0;
-  }
-
-  .login__register, login__create{
-      left: -11rem;
-  }
-
-  .login__register{
-      bottom: -2rem;
-  }
-
-  .login__create{
-      bottom: -5.5rem
-  }
-}
 
 .wrapper{
   display: flex;
@@ -270,9 +226,9 @@ h6{
 }
 h7{
     display: block;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: var(--first-color);
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
     margin-bottom: -0.3em;
     text-align: center;
 }
@@ -346,10 +302,10 @@ button3{
   background-color:var(--third-color);
   padding: 8px 14px;
   letter-spacing: 2px;
-  text-transform: capitalize;
   box-shadow: 0 10px 10px rgba(56, 6, 47, 0.4);
   border-radius: 8px;
   margin-left: 5rem;
+  margin-top: 2rem;
 }
 
 button, button2, button3:hover{
@@ -408,7 +364,7 @@ button, button2, button3:hover{
   height: 250px;
   background-color: var(--third-color);
 }
-
+/*==ABOUT US==*/
 .div-1{
   background-color: var(--third-color);
   height:250px;
@@ -531,102 +487,154 @@ button, button2, button3:hover{
   color: var(--second-color);
 }
   
-/*==Login Form==*/
+/*==LOGIN FORM==*/
 
-.box2{
-  position: relative;
-  border-radius: 12px;
-  width: 330px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 18px;
-  background-color: #f6ebf9;
-  margin-top: 3em;
-
+.trigger{
+  background-image: var(--first-color);
+  font-size: 22px;
+  padding: 10px 20px;
+}
+.overlay{
+  position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--fifth-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 500ms;
+    visibility: hidden;
+}
+.overlay:target{
+    opacity: .95;
+    visibility: visible;
 }
 
 .close{
-  display: block;
-  position: absolute;
-  width: 40px;
-  height:40px;
-  top: 0;
-  right: 0;
-  color: var(--first-color);
-  font-size: 34px;
+    position:absolute;
+    right: 20px;
+    top:0;
+    font-size: 30px;
+    color: var(--first-color);
+    font-weight: bold;
+    transition: all 200ms;
+
 }
 
-.close:hover{
-  background-color: var(--third-color);
-  border-radius: 0 12px 0 0;
-  color:#fcfcfc;
+.column{
+      width: 50%;
+      padding: 35px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.details{
+  background: var(--first-color);
+}
+.details h3{
+  color: var(--first-color)
+}
+
+.signin .signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    background: var(--third-color);
+    color: #fff;
+    text-align: center;
+}
+
+@media-only screen and (max-width: 480px){
+  .wrapper{
+    width: 80%;
+    flex-direction: column-reverse;
+  }
+  .column{
+    width: 100%;
+  }
+  .close{
+    top: 0;
+    right: 10px;
+    margin: 0;
+  }
+}
+
+input{
+    background: #eee;
+    border-radius: 6px;
+    padding: 12px 15px;
+    border: 2px;
+    margin: 8px 0;
+    width: 100%;
+    font-family: inherit;
+    color: var(--third-color);
+    font-size: inherit
+}
+
+input:focus{
+  outline-color: var(--first-color);
+
+}
+
+a{
+  color: var(--third-color);
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.form-submit{
+  background: var(--first-color);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px 45px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 80ms ease-in;
+}
+
+.form-submit:hover{
+  background: var(--third-color);
+  transform: scale(1.1);
+}
+.signup .form-submit{
+  margin-top: 15px;
+}
+
+#signin{
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--third-color);
+  font-weight: bold;
   cursor: pointer;
 }
-
-.registration-box{
-  margin-top: 63px;
+#signup{
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-label{
-  display: block;
-  position: absolute;
-  font-size: 18px;
-  color: rgb(169, 171, 170);
-  margin-top: -62px;
-  padding-left: 18px;
-  text-align: left;
-  pointer-events: none;
-  transition: .4s;
+span{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5em;
 }
-input{
-  width:95%;
-  height: 42px;
-  margin: 10px 1px 28px 1px;
-  padding: 9px;
-  font-size: 16px;
-  color: var(--first-color);
-  border: var(--third-color) 1px solid;
-  outline: none;
-  border-radius: 5px;
-}
-
-input:focus~label,
-input:valid~label{
-    margin-top: -95px;
-    padding-left: 8px;
-    color: var(--first-color);
-    font-weight: 500;
-}
-
-.box span{
-  height: 2px;
-  background-color: var(--first-color);
-
-}*/
-.body-text{
-  font-size: 17px;
-  line-height: 25px;
-
-}
-
-p{
-    margin-top: 28px;
-    font-size: 22px;
-}
-
-button4{
-    display: block;
-    margin: 0 auto;
-    margin-top: 25px;
-    padding: 10px 43px 10px 43px;
-    border: none;
-    border-radius: 32px;
-    font-size: 20px; 
-    color: #fff;
-}
-
-button3:hover, button:focus{
-    background-color: var(--first-color);
-    outline: #fff;
-    cursor: pointer;
+.content{
+  background: var(--third-color);
+  color:#fff;
+  text-align: center;
 }
