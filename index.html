@@ -23,7 +23,7 @@
             <li><a href="#section3">About Us</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#section4">Login</a></li>
-            <li><a href="#"><i class="uil uil-user"></i></a></li>
+            <li><a href="#popup" class="trigger"><i class="uil uil-user"></i></a></li>
           </ul>
           </nav>
           <div id="section1">
@@ -33,7 +33,7 @@
                         <h1>Adopt.</h1>
                         <h1><span class="multiText">Dont Shop.</h1>
                         <p>It's never too late to fall in love</p>
-                        <div class="btns">
+                        <div>
                             <button> <a href="#section2"> </a>Find Pet ></button>
                         </div>
                     </div>
@@ -118,32 +118,46 @@
                 <h2>Join our family of pet lovers!</h2>
           </div>
           </div>
-          <section class="box2">
-              <div class="close">&times;</div>
-              <div class="circle">
-                <span class="register-head"></span>
-                <span class="register-body"></span>
-              </div>
-
-            <div class="registration-box">
-              <div>
-                <input type ="email" class="email" required="required">
-                <label for="email">Email</label>
-              </div>
-
-            <div>
-              <input type ="text" class="first_name" required="required">
-              <label for="first_name">First Name</label>
+          
+          <!--<a href="#popup" class="trigger">Click me</a>-->
+          <div class="overlay" id="popup">
+            <div class="wrapper">
+                <a href="#" class="close">&times;</a>
+                <div class="column details">
+                   <div class="signin">
+                    <h4>Sign In</h4>
+                    <input type="email" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forgot Password</a>
+                    <button3 class="form-submit">Sign in</button3>
+                    <span> Dont have an account?
+                        <button4 id="signin">Create Account</button4>
+                    </span>
+                   </div>
+    
+                   <div class="signup">
+                    <h4>Sign Up</h4>
+                    <input type="name" placeholder="Full Name">
+                    <input type="email" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button class="form-submit">Sign In</button>
+                    <span>Dont have an account?
+                        <button4 id="signup">Sign In</button4></span>
+                    </div>
+                </div>
+                <div class="column content">
+                    <div class="signin">
+                        <h7>Welcome Back!</h7>
+                        <p1>Login with your personal info to stay connected</p1>
+                    </div>
+                    <div class="signup">
+                        <h7>Hello, Friend</h7>
+                        <p1>Enter your personal details and start your journey with us</p1>
+                    </div>
+                </div>
             </div>
-
-            <div>
-              <input type ="text" class="last_name" required="required">
-              <label for="last_name">Second Name</label>
-            </div>
-
-                <button3 class="btnSubmit">Submit</button3>
-            </div>
-          </section>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
     </div>
 
