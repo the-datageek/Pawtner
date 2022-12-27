@@ -226,11 +226,11 @@ h6{
 }
 h7{
     display: block;
-    font-size: 6em;
+    font-size: 5.6rem;
     font-weight: 500;
     color: #fff;
     margin-bottom: -0.3em;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -251,7 +251,15 @@ p{
   color: var(--third-color);
   margin-top: 1.5em;
 }
+p1{
+  display: block;
+  width: 90%;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 50px;
 
+}
 p2{
   display: block;
   width: 90%;
@@ -490,7 +498,7 @@ button, button2, button3:hover{
   color: var(--second-color);
 }
   
-/*==LOGIN FORM==*/
+/*==LOGIN AND SIGNUP FORM==*/
 
 .trigger{
   background-image: var(--first-color);
@@ -503,7 +511,7 @@ button, button2, button3:hover{
     left: 0;
     bottom: 0;
     right: 0;
-    background: var(--fifth-color);
+    background: var(--third-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,7 +543,7 @@ button, button2, button3:hover{
 }
 
 .details{
-  background: var(--first-color);
+  background: rgb(182, 180, 180);
 }
 .details h3{
   color: var(--first-color)
@@ -573,6 +581,7 @@ input{
     padding: 12px 15px;
     border: 2px;
     margin: 8px 0;
+    margin-bottom: 1em;
     width: 100%;
     font-family: inherit;
     color: var(--third-color);
@@ -588,7 +597,8 @@ a{
   color: var(--third-color);
   text-decoration: none;
   font-size: 14px;
-  margin: 15px 0;
+  margin: 15px;
+  
 }
 
 .form-submit{
@@ -596,13 +606,13 @@ a{
   border: none;
   border-radius: 6px;
   color: #fff;
-  padding: 12px 45px;
-  font-size: 12px;
+  padding: 12px 40px;
+  font-family: inherit;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   cursor: pointer;
-  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in; 
+  margin-left: -5px;
 }
 
 .form-submit:hover{
@@ -621,13 +631,15 @@ a{
   color: var(--third-color);
   font-weight: bold;
   cursor: pointer;
+  
 }
+
 #signup{
   background: none;
   border: none;
   font-family: inherit;
   font-size: inherit;
-  color: #fff;
+  color: var(--first-color);
   font-weight: bold;
   cursor: pointer;
 }
