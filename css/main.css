@@ -160,10 +160,10 @@ nav{
 /*==H-TAGS==*/
 h1{
   display: block;
-  font-size: 6em;
+  font-size: 7em;
   font-weight: 900;
   color: var(--third-color);
-  margin-bottom: -0.3em;
+  margin-bottom: -0.5em;
 }
 
 .container.h1{
@@ -237,7 +237,7 @@ h7{
 .multiText{
   color: var(--first-color);
   text-transform: capitalize;
-  margin-top: -1em;
+  font-size: 6rem;
 }
 
 a{
@@ -249,6 +249,7 @@ p{
   width: 90%;
   font-size: 2em;
   color: var(--third-color);
+  margin-top: 1.5em;
 }
 
 p2{
@@ -317,6 +318,7 @@ button, button2, button3:hover{
   position: relative;
   width: 100%;
   height: 100%;
+  
 }
 
 .imgbox img{
@@ -327,6 +329,7 @@ button, button2, button3:hover{
   right: 50px;
   transform: rotateY(180deg);
   animation: animateUser 4s linear infinite;
+  
 }
 
 @keyframes animateUser {
@@ -444,7 +447,7 @@ button, button2, button3:hover{
   cursor: pointer;
 }
 
-/*==PETS==*/
+/*==PETS DISPLAY==*/
 .pets{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
