@@ -20,16 +20,15 @@
 		let output ="";
 
 		for(let item of pets){
-			output += `
+			output+= `
 			<div class = "pet">
 				<image src="${item.image}" alt="${item.image}">
 				<h4 class="name">${item.name}</h4>
+				<h8 class="gender">${item.gender}</h8>
 				<h5 class="description">${item.description}</h5>
-				<h7 class="gender">${item.gender}</h7>
 				<p class ="wishlist">
-				<i class="uil uil-heart"></i> 
-				</p>
-				<button3>Adopt</button2></button3>
+				<i class="uil uil-heart"></i></p>
+				<button4>Adopt</button4>
 			</div>
 			`;
 		}
@@ -38,20 +37,10 @@
  }
 
  //EventListener for Login Form
+ $('.signup').hide();
 
-let btnOpen = document.querySelector(".btnOpen");
-let box = document.querySelector(".box");
-let body = document.querySelector("body");
-let close = document.querySelector(".close");
-
-btnOpen.addEventListener("click", ()=>{
-    btnOpen.style.display="none";
-    box.style.display="block";
-    body.style.backgroundColor="#222";
-});
-
-close.addEventListener("click", ()=>{
-    btnOpen.style.display="block";
-    box.style.display="none";
-    body.style.backgroundColor="#999"
-});
+ $('#signin, #signup').on(
+	 'click', function(){
+		 $('.signin, .signup').toggle()
+	 }
+ )

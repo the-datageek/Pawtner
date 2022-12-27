@@ -1,6 +1,6 @@
 [
     {
-      "name": "Spot",
+      "name": "Zuri",
       "image": "https://tinyurl.com/2k4m2v6c",
       "description": "Spot is an amazing and playful dog",
       "age":"Young",
@@ -8,7 +8,7 @@
       "size":"medium"
     },
     {
-        "name": "Dot",
+        "name": "Rehema",
         "image": "https://tinyurl.com/9xax7fp6",
         "description": "Loves snuggles and food",
         "age":"Young",
@@ -17,7 +17,7 @@
   
     },
     {
-        "name": "Humpty",
+        "name": "Azizi",
         "image": "https://tinyurl.com/pmc4b69t",
         "description": "Loves belly rubs and food",
         "age":"Young",
@@ -26,7 +26,7 @@
   
     },
     {
-        "name": "Becky",
+        "name": "Kina",
         "image": "https://tinyurl.com/2683n26a",
         "description": "Very Talkative and funny",
         "age":"Young",
@@ -34,5 +34,6 @@
         "size":"small"
   
     }
+
 
 ]
