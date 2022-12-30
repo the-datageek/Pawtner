@@ -130,14 +130,9 @@ nav{
   overflow: hidden;
 }
 .wrapper2{
-  display: grid;
-  width: 100%;
-  height:80vh;
-  justify-content: left;
-  align-items: center;
-  padding:0 10%;
-  overflow: hidden;
-
+  width: 80%;
+  margin-left: 10em;
+ 
 }
 
 .cols{
@@ -356,7 +351,7 @@ button, button2, button3, button4:hover{
 .imgbox img{
   position: relative;
   height: 100%;
-  width: calc(130% - 80px);
+  width: calc(100% - 80px);
   top: -40px;
   right: 50px;
   transform: rotateY(180deg);
@@ -371,28 +366,21 @@ button, button2, button3, button4:hover{
   }
 }
 
-.imgbox #splash{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-35deg);
-  width: 160%;
-  filter: saturate(150%);
-  animation: animate 4s linear infinite;
-}
-
 @keyframes animate{
   50%{
     right: 49%;
     left:  51%;
-    width: 155%;
+    width: 100%;
   }
 }
 
-#section1,#section2,#section3{
+#section1,#section3{
   height: 950px;
   display: inline-block;
   width: 100%;
+}
+#section2{
+  padding: 20px;
 }
 
 #section4{
@@ -480,15 +468,15 @@ button, button2, button3, button4:hover{
   cursor: pointer;
 }
 
-/*==PETS DISPLAY==*/
+/*==PETS DISPLAY
 .pets{
   display: grid;
   grid-template-columns:50% 50% 50% 50%; 
   grid-gap: 30px;
-  margin: 45px;
-  max-width: 500px;
+  margin: 50px;
+  max-width: 550px;
   padding: 10px;
- 
+  border-radius: 25px;
 }
 
 .pet{
@@ -521,8 +509,85 @@ button, button2, button3, button4:hover{
 
 .pet.wishlist:hover{
   color: var(--second-color);
+} ==*/
+
+/*==PET DISPLAY==*/
+#search-container{
+  margin: 1em 0;
 }
+
+#search-container input{
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#search-container input:focus{
+  border-bottom-color: #6759ff;
+}
+
+#search-container button{
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #6759ff;
+  color: #fff;
+  border-radius: 2px;
+  margin-top: 0.5em;
+}
+#buttons{
+  display: flex;
+  justify-content: center;
+}
+.button-value{
+  border: 1px solid #6759ff;
+  padding: 1em 2.2em;
+  border-radius: 1.5em;
+  background-color: transparent;
+  color: #6759ff;
+  cursor: pointer;
   
+}
+
+.active{
+  background-color: #6759ff;
+  color: #fff;
+}
+
+#pets{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-column-gap: -1em;
+  padding: 1em 0;
+} 
+
+.card{
+  background-color: #fff;
+    max-width: 20em;  /*=reduces the spacing between images=*/
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 18px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+.image-container{
+  text-align: center;
+}
+
+.container{
+  padding-top: 1em;
+  color:rgba(1, 2, 68, 0.08);
+}
+
+.container h5{
+  font-weight: 500;
+}
+
+.hide{
+  display: none;
+}
+
+
 /*==LOGIN AND SIGNUP FORM==*/
 
 .trigger{
@@ -585,7 +650,7 @@ button, button2, button3, button4:hover{
     text-align: center;
 }
 
-@media-only screen and (max-width: 786px){
+@media-only screen and (max-width: 726px){
   .wrapper{
     width: 80%;
     flex-direction: column-reverse;
@@ -597,6 +662,15 @@ button, button2, button3, button4:hover{
     top: 0;
     right: 10px;
     margin: 0;
+  }
+  .card{
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #pets{
+    grid-template-columns: auto auto auto auto;
+    grid-column: 1em;
+
   }
 }
 

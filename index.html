@@ -39,7 +39,6 @@
                     </div>
                     <div class="cols cols1">
                         <div class="imgbox">
-                        <img src="/src/paws.png" id="splash">
                         <img src="https://tinyurl.com/yzzuremw" >
                         </div>  
                     </div>
@@ -48,15 +47,30 @@
           <div id="section2">
             <h6>OUR PETS</h6>
             <h4>Waiting for adoption</h4>
+            <br>
             <!--Fetch animal images from JSON file-->
 
             <div class="wrapper2">
-              <div class="pets">
+              <!--<div id="search-container">
+                <input
+                type="search"
+                id="search-input"
+                placeholder="Search animal here..."
+                  />
+                  <button id="search">Search</button>
+              </div> -->
+              <div id="buttons">
+                <button5 class="button-value" onclick="filterProduct('all')">All</button5>
+                <button5 class="button-value" onclick="filterProduct('Dog')">Dogs</button5>
+                <button5 class="button-value" onclick="filterProduct('Cat')">Cats</button5>
+                <button5 class="button-value" onclick="filterProduct('Bird')">Birds</button5>
+                
               </div>
+                <div id="pets"></div>
             </div>
-            
-            
           </div>
+            
+            
           <div id="section3">
             <!--add team members here-->
             <section class="team">
@@ -162,10 +176,11 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        
         
     </div>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="pets.js"></script>
 </body>
 </html>
