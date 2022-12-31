@@ -62,12 +62,13 @@ nav{
   line-height: 80px;
   z-index: 111;
   justify-content: space-around;
+  
 }
 
 
 .logo{
   position: absolute;
-  height: aut0;
+  height: auto;
   left:0px;
   width:250px;
   justify-content: space-between;
@@ -253,7 +254,7 @@ p{
   width: 90%;
   font-size: 2em;
   color: var(--third-color);
-  margin-top: 1.5em;
+  margin-top: 1.2em;
 }
 p1{
   display: block;
@@ -282,7 +283,7 @@ button{
   color: #fff;
   background-color:var(--first-color);
   padding: 8px 14px;
-  margin: 40px 5px;
+  margin: 20px 2px;
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 15px 10px rgba(56, 6, 4, 0.1);
@@ -729,13 +730,13 @@ input:focus{
     width: 22%;
     font-family: inherit;
     color: var(--third-color);
-    font-size: inherit
+    font-size: inherit;
 }
 
 a{
   color: var(--third-color);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   margin: 15px;
   
 }
