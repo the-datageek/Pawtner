@@ -285,7 +285,7 @@ button{
   margin: 40px 5px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  box-shadow: 0 15px 10px rgba(56, 6, 47, 0.4);
+  box-shadow: 0 15px 10px rgba(56, 6, 4, 0.1);
   border-radius: 8px;
 }
 button2{
@@ -299,7 +299,7 @@ button2{
   padding: 8px 14px;
   letter-spacing: 2px;
   text-transform: capitalize;
-  box-shadow: 0 15px 10px rgba(56, 6, 47, 0.4);
+  box-shadow: 0 15px 10px rgba(56, 6, 4, 0.4);
   border-radius: 8px;
   margin-left: 32em;
 
@@ -330,8 +330,7 @@ button4{
   color: #fff;
   background-color:var(--third-color);
   padding: 8px 14px;
-  letter-spacing: 2px;
-  box-shadow: 0 10px 10px rgba(56, 6, 47, 0.1);
+  letter-spacing: 1px;
   border-radius: 8px;
   margin-top: 5rem;
 }
@@ -351,7 +350,7 @@ button, button2, button3, button4:hover{
 .imgbox img{
   position: relative;
   height: 100%;
-  width: calc(100% - 80px);
+  width: calc(130% - 80px);
   top: -40px;
   right: 50px;
   transform: rotateY(180deg);
@@ -370,7 +369,7 @@ button, button2, button3, button4:hover{
   50%{
     right: 49%;
     left:  51%;
-    width: 100%;
+    width: 155%;
   }
 }
 
@@ -539,18 +538,21 @@ button, button2, button3, button4:hover{
   display: flex;
   justify-content: center;
 }
+button5{
+  margin-right: 15px;
+}
 .button-value{
-  border: 1px solid #6759ff;
+  border: 1px solid var(--first-color);
   padding: 1em 2.2em;
   border-radius: 1.5em;
   background-color: transparent;
-  color: #6759ff;
+  color: var(--first-color);
   cursor: pointer;
   
 }
 
 .active{
-  background-color: #6759ff;
+  background-color: var(--first-color);
   color: #fff;
 }
 
@@ -650,7 +652,7 @@ button, button2, button3, button4:hover{
     text-align: center;
 }
 
-@media-only screen and (max-width: 726px){
+@media-only screen and (max-width: 786px){
   .wrapper{
     width: 80%;
     flex-direction: column-reverse;
@@ -724,8 +726,9 @@ a{
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 80ms ease-in; 
   margin-left: -5px;
+  transition: transform 80ms ease-in; 
+ 
 }
 
 .form-submit:hover{
@@ -760,6 +763,7 @@ span{
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.5em;
+  color: var(--third-color)
 }
 .content{
   background: var(--third-color);
