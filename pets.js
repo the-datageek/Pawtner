@@ -54,7 +54,7 @@ let pets = {
          },
         {
             petName: "Kairetu",
-            image: "https://tinyurl.com/mjmsrwf4",
+            image: "https://tinyurl.com/2vnn4pp5",
             description: "Loves belly rubs and food",
             age:"Young",
             gender:"Male",
