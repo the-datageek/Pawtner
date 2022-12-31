@@ -280,7 +280,7 @@ button{
   font-size: 25px;
   font-weight: 400;
   color: #fff;
-  background-color:var(--third-color);
+  background-color:var(--first-color);
   padding: 8px 14px;
   margin: 40px 5px;
   letter-spacing: 2px;
@@ -330,13 +330,33 @@ button4{
   color: #fff;
   background-color:var(--third-color);
   padding: 8px 14px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 10px rgba(56, 6, 47, );
   border-radius: 8px;
   margin-top: 5rem;
 }
-
-button, button2, button3, button4:hover{
+button6{
+  outline: none;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background-color:var(--first-color);
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 5rem;
+  margin-left: 7em;
+  
+  
+  
+}
+button2, button3, button4:hover{
   background-color: var(--first-color);
+}
+button, button6:hover{
+  background-color: var(--third-color);
 }
 /*==Image and Animation==*/
 
@@ -550,6 +570,9 @@ button5{
   cursor: pointer;
   
 }
+#adopt-button{
+  align-items: center;
+}
 
 .active{
   background-color: var(--first-color);
@@ -570,6 +593,7 @@ button5{
     padding: 1em;
     border-radius: 18px;
     box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    
 }
 
 .image-container{

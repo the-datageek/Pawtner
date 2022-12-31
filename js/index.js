@@ -33,7 +33,7 @@ for(let i of pets.data){
 	name.classList.add("pet-name");
 	name.innerText = i.petName;
 	container.appendChild(name);
-
+	
 	//gender
 	let gender = document.createElement("h5");
 	gender.innerText = i.gender;
@@ -43,6 +43,15 @@ for(let i of pets.data){
 	let description = document.createElement("h5");
 	gender.innerText = i.description;
 	container.appendChild(description);
+
+
+	//adopt button
+	let adoptButton = document.createElement("button6");
+    adoptButton.classList.add("adopt-button");
+    adoptButton.innerText = "Adopt";
+    container.appendChild(adoptButton);
+
+   
 
 
 	card.appendChild(container);
