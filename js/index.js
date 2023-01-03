@@ -35,23 +35,30 @@ for(let i of pets.data){
 	container.appendChild(name);
 
 	//gender
-	let gender = document.createElement("h5");
+	let gender = document.createElement("h8");
 	gender.innerText = i.gender;
 	container.appendChild(gender);
 
 	//description
-	let description = document.createElement("h5");
+	let description = document.createElement("h8");
 	gender.innerText = i.description;
 	container.appendChild(description);
 
 
-	/*//adopt button
+	//adopt button
 	let adoptButton = document.createElement("button6");
     adoptButton.classList.add("adopt-button");
     adoptButton.innerText = "Adopt";
     container.appendChild(adoptButton);
 
-	*/
+	//wishlist button
+	let wishlistButton = document.createElement("wishlist");
+    wishlistButton.classList.add("wishlist-button");
+    wishlistButton.innerText = "Wishlist";
+    container.appendChild(wishlistButton);
+
+    //button
+	
 
 
 	card.appendChild(container);
@@ -87,13 +94,14 @@ function filterProduct(value){
 				   element.classList.remove("hide");
 			   }
 			   else{
-				   //hide ther elements
+				   //hide their elements
 				   element.classList.add("hide");
 			   }
 			}
 	});
 }
 //search button click
+//will implement this later
 document.getElementById("search").addEventListener("click", () =>{
     //initializations
     let searchInput = document.getElementById("search-input").value;

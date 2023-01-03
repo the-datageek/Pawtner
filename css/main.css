@@ -232,9 +232,11 @@ h7{
 }
 h8{
   display: block;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: 500;
-  color: var(--first-color);
+  color: var(--third-color);
+  text-align: center;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -349,9 +351,7 @@ button6{
   border-radius: 8px;
   margin-top: 5rem;
   margin-left: 7em;
-  
-  
-  
+  margin-bottom: -3em;  
 }
 button,button2, button3, button4:hover{
   background-color: var(--first-color);
