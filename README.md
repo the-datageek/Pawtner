@@ -41,7 +41,10 @@ or
 
 
 ### Deliverables
-As a user, I can:
+As a user, you can:
+* Sign up/Sign in using the Login Form
+* In the 'Adopt a Pet' section, a user can be able to filter through the animals available for adoption by type, either a dog, cat or other types.
+
 
 
 
