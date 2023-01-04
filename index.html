@@ -18,13 +18,13 @@
       
       <nav>
         <a href="#section1"></a>
-        <img src="https://tinyurl.com/2e9dtad9" class="logo">
+        <img src="pawtner.png" class="logo">
           <ul class="navItems">
             <li><a href="#section1">Home</a></li>
             <li><a href="#section2">Adopt a Pet</a></li>
             <li><a href="#section3">About Us</a></li>
             <li><a href="#popup" class="trigger">Login</a></li>
-            <li><a href="#"><i class="uil uil-user"></i></a></li>
+            <li><a href="#section4"><i class="uil uil-user"></i></a></li>
           </ul>
           </nav>
           <div id="section1">
@@ -35,7 +35,8 @@
                         <h1><span class="multiText">Dont Shop.</span></h1>
                         <p>It's never too late to fall in love</p>
                         <div>
-                            <button> Find Pet ></button>
+                          <a href="#section2"><button>Find a Pet</button> </a>
+                           <!--<button> Find Pet ></button>--> 
                         </div>
                     </div>
                     <div class="cols cols1">
@@ -52,14 +53,14 @@
             <!--Fetch animal images from JSON file-->
 
             <div class="wrapper2">
-              <!--<div id="search-container">
+              <div id="search-container">
                 <input
-                type="search"
-                id="search-input"
-                placeholder="Search animal here..."
+                  type="search"
+                  id="search-input"
+                  placeholder="Search animal here..."
                   />
-                  <button id="search">Search</button>
-              </div> -->
+                  <button7 id="search">Search</button7>
+              </div> 
               <div id="buttons">
                 <button5 class="button-value" onclick="filterProduct('all')">All</button5>
                 <button5 class="button-value" onclick="filterProduct('Dog')">Dogs</button5>
@@ -69,9 +70,8 @@
               </div>
                 <div id="pets"></div>
             </div>
-          </div>
-            
-            
+          </div> 
+
           <div id="section3">
             <!--add team members here-->
             <section class="team">
@@ -133,8 +133,9 @@
           <div id="section4">
             <div class="div-1">
                 <h2>Join our family of pet lovers!</h2>
-                <input class="subscribe" type="subscribe" placeholder="Enter email">
+                
           </div>
+
           </div>
           
           <!--Login and Signup Form-->
@@ -177,7 +178,37 @@
                 </div>
             </div>
         </div>
-        
+
+          <!--Book Appointment Form-->
+            <div class="container2">
+              <div class="card2">
+              <div class="box2">
+               <h8>Book Appointment</h8>
+                <div class="name">
+                  <i class="uil uil-user"></i>
+                  <input type="text" placeholder="Name" id=""name>
+                </div>
+                <div class="email">
+                  <i class="uil uil-envelope"></i>
+                  <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="date">
+                  <input type="date" placeholder=" Appointment Date" id="date">
+                </div>
+                <div class="message-box">
+                  <textarea id="msg" cols="10" rows="5" placeholder="Message"></textarea>
+                </div>
+                <div class="book-button">
+                  <button5 id="send" onclick="message()">Book Appointment</button5>
+                </div>
+                <div class="message">
+                  <div class="success" id="success">Your appointment has been successfully booked</div>
+                
+                  <div class="danger" id="danger">Fields cant be empty</div>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" ></script>
     </div>

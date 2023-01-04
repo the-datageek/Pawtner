@@ -7,6 +7,33 @@
 	 }
  )
 
+ //EventListener for Appointment form
+ function message(){
+	var Name = document.getElementById('name');
+	var email= document.getElementById('email');
+	var msg = document.getElementById('msg');
+	const success =document.getElementById('success');
+	const danger =document.getElementById('danger');
+
+	if(Name.value === '' || email.value === '' || msg.value ===''){
+		danger.style.display = 'block';
+	}
+		else{
+			setTimeout(()=>{
+				Name.value='';
+				email.value='';
+				msg.value='';
+			},2000);
+			success.style.display = 'block';
+		}
+
+		setTimeout(() =>{
+			danger.style.display = 'none';
+			success.style.display = 'none';
+		}, 4000);
+	}
+
+ 
  //Display pets
 for(let i of pets.data){
 	//create card
@@ -35,12 +62,12 @@ for(let i of pets.data){
 	container.appendChild(name);
 
 	//gender
-	let gender = document.createElement("h8");
+	let gender = document.createElement("h9");
 	gender.innerText = i.gender;
 	container.appendChild(gender);
 
 	//description
-	let description = document.createElement("h8");
+	let description = document.createElement("h9");
 	gender.innerText = i.description;
 	container.appendChild(description);
 
@@ -51,28 +78,21 @@ for(let i of pets.data){
     adoptButton.innerText = "Adopt";
     container.appendChild(adoptButton);
 
-	//wishlist button
-	let wishlistButton = document.createElement("wishlist");
-    wishlistButton.classList.add("wishlist-button");
-    wishlistButton.innerText = "Wishlist";
-    container.appendChild(wishlistButton);
-
-    //button
 	
-
 
 	card.appendChild(container);
 	document.getElementById("pets").appendChild(card);
 }
 
-//parameter passes from button 
+
+//parameter passed from button 
 
 function filterProduct(value){
 	//button class code
 	let buttons = document.querySelectorAll(".button-value");
 	buttons.forEach((button) => {
 		//check if value equals innerText
-		if(value.toUpperCase()==button.innerText.toUpperCase()){
+		if(value.toUpperCase()== button.innerText.toUpperCase()){
 			button.classList.add("active");
 		}else{
 			button.classList.remove("active");
