@@ -41,6 +41,7 @@ html{
 body{
   font-family: var(--body-font);
   background-color: var(--body-color);
+  overflow-x: hidden;
 }
 
 img{
@@ -190,13 +191,13 @@ h3{
   font-size: 3.3em;
   font-weight: 900;
   color: var(--third-color);
-  margin-bottom: -0.3em;
+  margin-bottom: -0.1em;
   text-align: center;
 }
 
 h4{
   display: block;
-  font-size: 2.2em;
+  font-size: 1.5em;
   font-weight: 900;
   color: var(--third-color);
   margin-bottom: -0.3em;
@@ -210,7 +211,7 @@ h5{
   text-align: center;
 
 }
-h6{
+.sctn2-head{
   display: block;
   font-size: 1.2em;
   font-weight: 700;
@@ -218,6 +219,28 @@ h6{
   margin-bottom: -0.3em;
   letter-spacing: 0.4em;
   text-align: center;
+  margin-top:-10rem;
+
+}
+
+.sctn2-head2{
+  display: block;
+  font-size: 3em;
+  font-weight: 900;
+  color: var(--third-color);
+  margin-bottom: -0.3em;
+  text-align: center;
+}
+
+.sctn3-head{
+  display: block;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--first-color);
+  margin-bottom: -0.1em;
+  letter-spacing: 0.4em;
+  text-align: center;
+  margin-top:2rem;
 
 }
 h7{
@@ -239,7 +262,7 @@ h8{
 }
 h9{
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--third-color);
   text-align: center;
@@ -251,6 +274,15 @@ h9{
   color: var(--first-color);
   text-transform: capitalize;
   font-size: 6rem;
+}
+
+.login-head{
+  display: block;
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--third-color);
+  margin-bottom: -0.3em;
+  text-align: center;
 }
 
 a{
@@ -279,10 +311,10 @@ p2{
   font-size: 1.5em;
   color: var(--third-color);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-button{
+.find-btn{
   outline: none;
   border: none;
   cursor: pointer;
@@ -291,12 +323,52 @@ button{
   color: #fff;
   background-color:var(--first-color);
   padding: 10px 14px 10px 14px;; 
-  margin: 20px 10px 1px;
+  margin-top: 5px;
+  margin-left: -0.5rem;
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 15px 10px rgba(56, 6, 4, 0.1);
   border-radius: 8px;
 }
+
+.find-btn:hover{
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.find-btn:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+.find-btn:hover::before {
+  filter: blur(20px);
+}
+
+.find-btn:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+
 button2{
   outline: none;
   border: none;
@@ -370,10 +442,10 @@ button6{
   font-weight: 400;
   color: #fff;
   background-color:var(--first-color);
-  padding: 8px 14px;
+  padding: 8px 84px;
   border-radius: 8px;
   margin-top: 5rem;
-  margin-left: 7em;
+  /* margin-left: 7em; */
   margin-bottom: -3em;  
 }
 button7{
@@ -406,7 +478,11 @@ button7:hover{
   position: relative;
   width: 100%;
   height: 100%;
+  margin-left: 5rem;
   
+}
+.landing-p{
+  margin-left: 0.5rem;
 }
 
 .imgbox img{
@@ -414,7 +490,7 @@ button7:hover{
   height: 100%;
   width: calc(130% - 80px);
   top: -40px;
-  right: 50px;
+  right: 30px;
   transform: rotateY(180deg);
   animation: animateUser 4s linear infinite;
   
@@ -423,27 +499,31 @@ button7:hover{
 @keyframes animateUser {
   50%{
     right: 30px;
-    left: -90px;
+    left: -10px;
   }
 }
 
 @keyframes animate{
   50%{
     right: 49%;
-    left:  51%;
+    left:  40%;
     width: 155%;
   }
 }
 
-#section1,#section3{
-  height: 950px;
+#section1,{
+  height: 800px;
   display: inline-block;
   width: 100%;
+
 }
 #section2{
-  padding: 20px;
+  padding: 50px;
+  margin-top: 5rem;
 }
-
+/* #section3{
+  height: 900px;
+} */
 #section4{
   height: 250px;
   background-color: var(--third-color);
@@ -473,7 +553,7 @@ button7:hover{
 
 .team-content{
   width: 100%;
-  max-width: 1350px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
@@ -574,8 +654,8 @@ button7:hover{
 
 /*==PET DISPLAY==*/
 #search-container{
-  margin: 1em 33em;
-  width: 70%;
+  margin: 1em 18em;
+  width: 100%;
 }
 
 #search-container input{
@@ -607,7 +687,7 @@ button7:hover{
 
 .button-value{
   border: 1px solid var(--first-color);
-  padding: 1em 2.2em;
+  padding: 1rem 0.5rem;
   border-radius: 1.5em;
   background-color: transparent;
   color: var(--first-color);
@@ -634,9 +714,9 @@ button7:hover{
 
 .card{
   background-color: #fff;
-    max-width: 20em;  /*=reduces the spacing between images=*/
+    max-width: 15rem;  /*=reduces the spacing between images=*/
     margin-top: 1em;
-    padding: 1em;
+    padding: 1rem;
     border-radius: 18px;
     box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
     
