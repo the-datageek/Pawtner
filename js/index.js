@@ -189,3 +189,26 @@ window.onload =() => {
 		document.querySelector(".pets").innerHTML = output;
 	}
  }--*/
+
+//  slider part
+$(".custom-carousel").owlCarousel({
+	autoWidth: true,
+	loop: true
+  });
+  $(document).ready(function () {
+	$(".custom-carousel .item").click(function () {
+	  $(".custom-carousel .item").not($(this)).removeClass("active");
+	  $(this).toggleClass("active");
+	});
+  });
+
+// booking form part
+$(".close, .nope").on('click', function () {
+	$('.modal').addClass('hidden');
+	$('.open').addClass('active');
+  })
+  
+  $(".open").on('click', function () {
+	$(this).removeClass('active');
+	$('.modal').removeClass('hidden');
+  })
