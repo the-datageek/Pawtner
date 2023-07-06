@@ -28,7 +28,8 @@
             <li><a href="#section1">Home</a></li>
             <li><a href="#section2">Adopt a Pet</a></li>
             <li><a href="#section15">About Us</a></li>
-            <li><a href="#section3">The Team</a></li>
+            <!-- <li><a href="#section3">The Team</a></li> -->
+            <li><a href="store.html">Store</a></li>
             <li><a href="#popup" class="trigger">Login</a></li>
             <li><a href="#section4"><i class="uil uil-user"></i></a></li>
           </ul>
@@ -42,8 +43,39 @@
                         <p class="landing-p">It's never too late to fall in love . . .</p>
                         <div>
                           <a href="#section2"><button class="find-btn">Find a Pet</button> </a>
-                          <a href="#"><button class="book-btn">Book Appointment</button> </a>
-                           <!--<button> Find Pet ></button>--> 
+                          <button class="book-btn" id="trigger" type="button">Book Appointment</button> 
+                          <!-- Book Appointment modal -->
+                          <!-- <div class="popup">
+                              <div class="close-btn">&times;</div>
+                              <div class="form">
+                                <h2>Login</h2>
+                                <div class="form-element">
+                                  <label for="email">Email</label>
+                                  <input
+                                      type="text"
+                                      id="email"
+                                      placeholder="Enter Email"
+                                  >
+                                </div>
+                                <div class="form-element">
+                                  <label for="password"></label>
+                                  <input
+                                  type="text"
+                                  id="password"
+                                  placeholder="Enter Password"
+                                >
+                                </div>
+                                <div class="form-element">
+                                  <button>Submit </button>
+
+                                </div>
+                              </div>
+                          </div> -->
+                          <div id="content">
+                            <h1>Look at me!</h1>
+                            <p>Im a modal window</p>
+                          </div>
+
                         </div>
                     </div>
                     <div class="cols cols1">
@@ -60,14 +92,7 @@
             <!--Fetch animal images from JSON file-->
 
             <div class="wrapper2">
-              <!-- <div id="search-container">
-                <input
-                  type="search"
-                  id="search-input"
-                  placeholder="Search animal here..."
-                  />
-                  <button7 id="search">Search</button7>
-              </div>  -->
+            
               <div id="buttons">
                 <button5 class="button-value" onclick="filterProduct('all')">All</button5>
                 <button5 class="button-value" onclick="filterProduct('Dog')">Dogs</button5>
@@ -150,9 +175,7 @@
                   <h4>Imani Morrah</h4>
                   <h5>Founder</h5>
                   <div class="icons">
-                    <!-- <a href="#"><i class="uil uil-instagram"></i></a>
-                    <a href="#"><i class="uil uil-twitter-alt"></i></a>
-                    <a href="#"><i class="uil uil-linkedin"></i></a> -->
+                    
                   </div>
                 </div>
 
@@ -161,9 +184,7 @@
                   <h4>Nyokabi Kamau</h4>
                   <h5>Co-Founder</h5>
                   <div class="icons">
-                    <!-- <a href="#"><i class="uil uil-instagram"></i></a>
-                    <a href="#"><i class="uil uil-twitter-alt"></i></a>
-                    <a href="#"><i class="uil uil-linkedin"></i></a> -->
+                   
                   </div>
                 </div>
 
@@ -184,103 +205,13 @@
                   <h4>Prince Daniel</h4>
                   <h5>Organizer</h5>
                   <div class="icons">
-                    <!-- <a href="#"><i class="uil uil-instagram"></i></a>
-                    <a href="#"><i class="uil uil-twitter-alt"></i></a>
-                    <a href="#"><i class="uil uil-linkedin"></i></a> -->
+                
                   </div>
                 </div>
               </div>
             </section>
           </div>
-          <!-- <div id="section3.5">
-            <div class="hero">
-                <h1>Testimonials</h1>
-                <div class="t-container">
-                  <div class="indicator">
-                    <span class="t-btn"></span>
-                    <span class="t-btn"></span>
-                    <span class="t-btn"></span>
-                    <span class="t-btn"></span>
-
-                  </div>
-                  <div class="testimonial">
-                    <div class="slide-row">
-                      <div class="slide-col">
-                        <div class="user-text">
-                          <p>"I adopted my furry best friend from this website, 
-                            and it was the best decision I ever made! The process
-                             was smooth, and the website provided all the information
-                              I needed to find the perfect pet. My new companion has 
-                              brought so much joy and love into my life.</p>
-                            <h3>Sarah inc</h3>
-                            <p>Zara Inc</p>
-    
-                        </div>
-                        <div class="user-img">
-                          <img src="/src/t1.jpg"/>
-                        </div>
-                       
-                      </div>
-                      <div class="slide-col">
-                        <div class="user-text">
-                          <p>"I adopted my furry best friend from this website, 
-                            and it was the best decision I ever made! The process
-                             was smooth, and the website provided all the information
-                              I needed to find the perfect pet. My new companion has 
-                              brought so much joy and love into my life.</p>
-                            <h3>Sarah inc</h3>
-                            <p>Zara Inc</p>
-    
-                        </div>
-                        <div class="user-img">
-                          <img src="/src/t4.jpg"/>
-                        </div>
-                       
-                      </div>
-                      <div class="slide-col">
-                        <div class="user-text">
-                          <p>"I can't thank this pet adoption website enough for
-                             helping me find my perfect match. The user-friendly interface 
-                             made it easy to browse through adorable pets in need of a home. 
-                             The website connected me with a local shelter, 
-                             and now I have a loyal and loving companion by my side."</p>
-                            <h3>Mark</h3>
-                            <p>Zara Inc</p>
-    
-                        </div>
-                        <div class="user-img">
-                          <img src="/src/t3.jpg"/>
-                        </div>
-                       
-                      </div>
-                      <div class="slide-col">
-                        <div class="user-text">
-                          <p>"I highly recommend this pet adoption website to anyone looking to 
-                            add a furry friend to their family.
-                             The website's comprehensive listings allowed me to filter by breed, size, and location,
-                            making the search process efficient and tailored to my preferences. 
-                             found my adorable fur baby within days!"</p>
-                            <h3>Emily</h3>
-                            <p>Zara Inc</p>
-    
-                        </div>
-                        <div class="user-img">
-                          <img src="/src/t2.jpg"/>
-                        </div>
-                       
-                      </div>
-    
-                       
-                      </div>
-
-                  </div>
-                  
-
-                </div>
-                
-                </div>
-            </div> -->
-
+         
           </div>
           <div id="section4">
             <div class="div-1">
@@ -338,103 +269,8 @@
             </div>
         </div>
 
-        <!-- Contact form -->
-        <!-- <section class="contact-page-sec">
-          <div class="contact-container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="contact-info">
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                      <i class="fas fa-map-marked"></i>
-                    </div>
-                    <div class="contact-info-text">
-                      <h2>address</h2>
-                      <span>1215 Lorem Ipsum, Ch 176080 </span> 
-                      <span>Nairobi, KENYA</span> 
-                    </div>
-                  </div>            
-                </div>          
-              </div>          
-              <div class="col-md-4">
-                <div class="contact-info">
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                      <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-info-text">
-                      <h2>E-mail</h2>
-                      <span>info@LoremIpsum.com</span> 
-                      <span>yourmail@gmail.com</span>
-                    </div>
-                  </div>            
-                </div>                
-              </div>                
-              <div class="col-md-4">
-                <div class="contact-info">
-                  <div class="contact-info-item">
-                    <div class="contact-info-icon">
-                      <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="contact-info-text">
-                      <h2>office time</h2>
-                      <span>Mon - Thu  9:00 am - 4.00 pm</span>
-                      <span>Thu - Mon  10.00 pm - 5.00 pm</span>
-                    </div>
-                  </div>            
-                </div>          
-              </div>          
-            </div>
-            <div class="2nd-row">
-              <div class="col-md-4">
-                <div class="contact-page-form" method="post">
-                  <h2>Get in Touch</h2> 
-                  <form action="contact-mail.php" method="post">
-                    <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="single-input-field">
-                        <input type="text" placeholder="Your Name" name="name"/>
-                      </div>
-                    </div>  
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="single-input-field">
-                        <input type="email" placeholder="E-mail" name="email" required/>
-                      </div>
-                    </div>                              
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="single-input-field">
-                        <input type="text" placeholder="Phone Number" name="phone"/>
-                      </div>
-                    </div>  
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="single-input-field">
-                        <input type="text" placeholder="Subject" name="subject"/>
-                      </div>
-                    </div>                
-                    <div class="col-md-12 message-input">
-                      <div class="single-input-field">
-                        <textarea  placeholder="Write Your Message" name="message"></textarea>
-                      </div>
-                    </div>                                                
-                    <div class="single-input-fieldsbtn">
-                      <input type="submit" value="Send Now"/>
-                    </div>                          
-                  </div>
-                  </form>   
-                </div>      
-              </div>
-              <div class="col-md-4">        
-                <div class="contact-page-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1553497921355" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>          
-              </div>        
-            </div>
-          </div>
-        </section> -->
-        
-        <!-- Book Appointment -->
-      
-
+ 
+  
 
         <!-- Footer -->
         <footer class="footer-section">
