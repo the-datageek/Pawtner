@@ -140,7 +140,7 @@
 /* header tags */
 h1{
     display: block;
-    font-size: 4.2em;
+    font-size: 4.4em;
     font-weight: 900;
     color: var(--third-color);
     line-height: 1;
@@ -562,6 +562,7 @@ img{
 }
 
 .sctn4-btn{
+  
 background: var(--first-color);
     color: #fff;
     font-size: 17px;
@@ -573,8 +574,9 @@ background: var(--first-color);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
     margin-top: 1rem;
-    margin-left: 35em;
+    margin-left: 36rem;
     /* align-items: center; */
+    
 
    
   }
