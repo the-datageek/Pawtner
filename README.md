@@ -1,22 +1,22 @@
 # Pawtner
 
-***
-## Table of Contents
-1. Description
-2. Setup
-3. Deliverables
-4. Acess
-5. Author and Licenses
+
 
 ### Description
-Pawtner is a pet adoption app that allows a user to find a pet to adopt. The user is able to add a pet they like to a wishlist by clicking on the like button.</br>
-A user is also able to book an appointment once they decide on which pet to adopt by clicking the adopt button.
+Pawtner is an innovative pet adoption application built with JavaScript and CSS. It provides a seamless platform for pet lovers to find their perfect furry companions. Pawtner goes beyond traditional adoption platforms by offering an integrated e-commerce store, creating a one-stop destination for all your pet-related needs.
+
+### Features
+* Pet Listings: Browse through a wide range of available pets, complete with detailed information and captivating images.
+* Search and Filters: Utilize search functionality and filters to narrow down the list of pets based on criteria such as species, breed, age, and location.
+* Adoption Process: Initiate the adoption process by filling out a simple form and submitting an application for the desired pet.
+* E-commerce Store: Explore the e-commerce store that offers pet-related products and accessories for purchase.
+* User Profiles: Create and manage your user profile, track your adoption applications, and save your favorite pets.
 
 ### Setup
 To access these files,make a fork of this repo in your github account. This will allow you to clone. </br>
 In your machine:
 * Create a new folder either through the Files folder or using the CLI  <code>mkdir folder-name</code>
-* Assuming youre using the CLI, move to the directory where youd like to store your code and type the command <code>git clone ssh-link</code>
+* Assuming youre using the CLI, move to the directory where you'd like to store your code and type the command <code>git clone ssh-link</code>
 * Once cloning is done, you can move into the file using the command <code>cd Pawtner</code>
 * Once youre inside the file, Open your preferred editor by typing <code>code .</code>  
 
@@ -37,20 +37,26 @@ or
 -Install <code>Live Server </code>extension
 -Click on code <code>Go Live </code>on the bottom right center
 
+### Technologies Used
+* JavaScript
+* CSS
+* HTML
 
+### Contributing
+Contributions to Pawtner are welcome! If you would like to contribute, please follow these steps:
 
+Fork the repository.
+Create a new branch for your feature or bug fix: <code>git checkout -b my-feature</code>
 
-### Deliverables
-As a user, you can:
-* Sign up/Sign in using the Login Form
-* In the 'Adopt a Pet' section, a user can be able to filter through the animals available for adoption by type, either a dog, cat or other types.
+Make the necessary changes and commit them: <code>git commit -am 'Add new feature'</code>
 
-
-
+Push the changes to your branch: <code>git push origin my-feature</code>
+Submit a pull request describing your changes.
 
 
 ### Author
-This project was contributed to by: <a href="https://github.com/the-datageek">"Faith Moraa</a>
+This project was contributed to by: <a href="https://github.com/the-datageek">Faith Moraa</a>
 
 #### License
-This project is licensed under ISC.
+This project is licensed under the <a href="https://opensource.org/license/mit/"> MIT License.</a>
+
