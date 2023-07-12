@@ -185,6 +185,7 @@ h1{
   color: var(--third-color);
   margin-bottom: -0.5em;
   margin-left: -3.3rem;
+  line-height: 1.3;
 }
 
 .container.h1{
@@ -567,7 +568,7 @@ button7:hover{
 .imgbox{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 70%;
   margin-left: 5rem;
   
 }
@@ -594,11 +595,11 @@ button7:hover{
   }
 
 
-.imgbox img{
+.landing-pic{
   position: relative;
-  height: 100%;
+  height: 70%;
   width: calc(130% - 80px);
-  top: -40px;
+  top: -50px;
   right: 30px;
   transform: rotateY(180deg);
   animation: animateUser 4s linear infinite;
@@ -624,6 +625,7 @@ button7:hover{
   height: 800px;
   display: inline-block;
   width: 100%;
+  margin-bottom: 3rem;
 
 }
 #section2{
